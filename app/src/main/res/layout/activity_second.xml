@@ -6,7 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".FirstActivity"
-    android:background="@color/design_default_color_secondary_variant">
+        android:background="@color/design_default_color_secondary_variant"
+        android:id="@+id/rootLayout">
 
     <TextView
             android:text="@string/second_activity"

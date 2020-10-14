@@ -32,7 +32,7 @@ public class FirstActivity extends AppCompatActivity {
         Intent intent = new Intent (FirstActivity.this, SecondActivity.class);
         startActivity ( intent );
 
-        // Override the default animation to only show the custom anim
+        // Override the default animation to only show the custom animation
         overridePendingTransition(0, 0);
     }
 }
