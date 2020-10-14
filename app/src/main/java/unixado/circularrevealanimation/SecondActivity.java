@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -42,6 +43,14 @@ public class SecondActivity extends AppCompatActivity {
                 });
             }
         }
+
+        Button backButton = findViewById ( R.id.playButton2);
+        backButton.setOnClickListener ( new View.OnClickListener () {
+            @Override
+            public void onClick ( View v ) {
+                onBackPressed ();
+            }
+        } );
     }
 
     private void circularRevealActivity() {
@@ -96,7 +105,7 @@ public class SecondActivity extends AppCompatActivity {
 
                 }
             });
-            circularReveal.setDuration(400);
+            circularReveal.setDuration(600);
             circularReveal.start();
         }else{
             super.onBackPressed();
