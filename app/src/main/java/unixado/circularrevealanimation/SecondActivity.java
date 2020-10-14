@@ -65,7 +65,7 @@ public class SecondActivity extends AppCompatActivity {
 
         // create the animator for this view (the start radius is zero)
         Animator circularReveal = ViewAnimationUtils.createCircularReveal(rootLayout, cx, cy, 0, finalRadius);
-        circularReveal.setDuration(1000);
+        circularReveal.setDuration(1600);
 
         // make the view visible and start the animation
         rootLayout.setVisibility( View.VISIBLE);
@@ -105,7 +105,7 @@ public class SecondActivity extends AppCompatActivity {
 
                 }
             });
-            circularReveal.setDuration(600);
+            circularReveal.setDuration(1000);
             circularReveal.start();
         }else{
             super.onBackPressed();
