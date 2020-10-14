@@ -1,5 +1,6 @@
 package unixado.circularrevealanimation;
 
+import android.content.Intent;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,4 +14,6 @@ public class SecondActivity extends AppCompatActivity {
 
         setContentView ( R.layout.activity_second );
     }
+
+
 }

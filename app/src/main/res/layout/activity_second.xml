@@ -19,7 +19,7 @@
     <Button
             android:layout_width="60dp"
             android:layout_height="60dp" android:id="@+id/playButton2"
-            android:background="@drawable/ic_baseline_add_circle_outline_24_white"
+            android:background="@drawable/ic_baseline_unfold_less_24"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="100dp"
     />
