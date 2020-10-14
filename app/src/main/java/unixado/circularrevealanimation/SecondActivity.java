@@ -63,6 +63,46 @@ public class SecondActivity extends AppCompatActivity {
         circularReveal.start();
     }
 
+    @Override
+    public void onBackPressed() {
+
+        final ConstraintLayout rootLayout = findViewById ( R.id.rootLayout );
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            int cx = rootLayout.getWidth () / 2;
+            int cy = rootLayout.getHeight() - getDips( (float) 130 );
+            float finalRadius = Math.max(rootLayout.getWidth(), rootLayout.getHeight());
+            Animator circularReveal = ViewAnimationUtils.createCircularReveal(rootLayout, cx, cy, finalRadius, 0);
+
+            circularReveal.addListener(new Animator.AnimatorListener() {
+                @Override
+                public void onAnimationStart(Animator animator) {
+
+                }
+
+                @Override
+                public void onAnimationEnd(Animator animator) {
+                    rootLayout.setVisibility(View.INVISIBLE);
+                    finish();
+                }
+
+                @Override
+                public void onAnimationCancel(Animator animator) {
+
+                }
+
+                @Override
+                public void onAnimationRepeat(Animator animator) {
+
+                }
+            });
+            circularReveal.setDuration(400);
+            circularReveal.start();
+        }else{
+            super.onBackPressed();
+        }
+    }
+
     private int getDips (float dps) {
         Resources resources = getResources ();
         return (int) TypedValue.applyDimension (
