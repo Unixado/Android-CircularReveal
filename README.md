@@ -1,5 +1,5 @@
 # Android-CircularReveal
-Circulare Reveal Animation to go back and forth between android Activities.
+Circular Reveal Animation to go back and forth between android Activities.
 
 <br/>
 
@@ -10,7 +10,7 @@ Circulare Reveal Animation to go back and forth between android Activities.
 </p>
 
 ## How to use 
-1. Add the line bellow to the repositories of your root build.gradle file: <br/>
+1. Add the line bellow to the repositories of your **root** `build.gradle` file: <br/>
 `maven { url 'https://jitpack.io' }` 
 
 ``` allprojects { 
@@ -24,7 +24,7 @@ Circulare Reveal Animation to go back and forth between android Activities.
 <br/>
 
 
-2. Add the following dependency in your app’s build.gradle file: <br/>
+2. Add the following dependency in your **app’s** `build.gradle` file: <br/>
 `implementation 'com.github.Unixado:AndroidCircularReveal-Library:-SNAPSHOT'`
 ```
 dependencies {
