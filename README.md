@@ -44,7 +44,7 @@ You might face are the following problem when the default white or black android
   <img height=500 src="https://github.com/Unixado/AndroidCircularReveal-Library/blob/master/Preview/noTransparency.gif">
 </p>
 
-To solve that problem add this following lines to your styles.xml default Appstyle:<br/>
+To solve that problem add this following lines to your `styles.xml` default Appstyle:<br/>
 ```
 <item name="android:windowDisablePreview">true</item>
 <item name="android:windowIsTranslucent">true</item>
