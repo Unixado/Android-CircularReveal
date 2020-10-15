@@ -1,4 +1,6 @@
 # Android-CircularReveal
+![](https://img.shields.io/badge/-Java-informational?style=for-the-badge&logo=Java&logoColor=white&color=007396)
+
 Circular Reveal Animation to go back and forth between android Activities.
 
 <br/>
