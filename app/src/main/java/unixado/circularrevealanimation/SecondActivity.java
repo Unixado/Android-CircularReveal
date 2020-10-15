@@ -1,5 +1,6 @@
 package unixado.circularrevealanimation;
 
+import Unixado.circularactivityreveal.CircularRevealAnimation;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;

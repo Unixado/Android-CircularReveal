@@ -1,2 +1,3 @@
+include ':CircularActivityReveal'
 include ':app'
 rootProject.name = "CircularRevealAnimation"

@@ -1,4 +1,4 @@
-package unixado.circularrevealanimation;
+package Unixado.circularactivityreveal;
 
 import android.animation.Animator;
 import android.app.Activity;
@@ -33,35 +33,33 @@ public class CircularRevealAnimation {
 
         final Activity activity = this.activity;
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            float finalRadius = Math.max(rootLayout.getWidth(), rootLayout.getHeight());
-            Animator circularReveal = ViewAnimationUtils.createCircularReveal(rootLayout, endingXCoordinate, endingYCoordinate, finalRadius, 0);
+        float finalRadius = Math.max(rootLayout.getWidth(), rootLayout.getHeight());
+        Animator circularReveal = ViewAnimationUtils.createCircularReveal(rootLayout, endingXCoordinate, endingYCoordinate, finalRadius, 0);
 
-            circularReveal.addListener(new Animator.AnimatorListener() {
-                @Override
-                public void onAnimationStart(Animator animator) {
+        circularReveal.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animator) {
 
-                }
+            }
 
-                @Override
-                public void onAnimationEnd(Animator animator) {
-                    rootLayout.setVisibility(View.INVISIBLE);
-                    activity.finish ();
-                }
+            @Override
+            public void onAnimationEnd(Animator animator) {
+                rootLayout.setVisibility(View.INVISIBLE);
+                activity.finish ();
+            }
 
-                @Override
-                public void onAnimationCancel(Animator animator) {
+            @Override
+            public void onAnimationCancel(Animator animator) {
 
-                }
+            }
 
-                @Override
-                public void onAnimationRepeat(Animator animator) {
+            @Override
+            public void onAnimationRepeat(Animator animator) {
 
-                }
-            });
-            circularReveal.setDuration(duration);
-            circularReveal.start();
-        }
+            }
+        });
+        circularReveal.setDuration(duration);
+        circularReveal.start();
     }
 
     public int getDips (float dps) {
@@ -85,5 +83,4 @@ public class CircularRevealAnimation {
         rootLayout.setVisibility( View.VISIBLE);
         circularReveal.start();
     }
-
 }
