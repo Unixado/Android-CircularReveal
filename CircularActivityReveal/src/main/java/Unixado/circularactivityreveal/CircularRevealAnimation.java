@@ -25,11 +25,11 @@ public class CircularRevealAnimation {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public void AnimateOpening ( final int duration, final int startingXCoordinate, final int startingYCoordinate){
+    public void animateOpening ( final int duration, final int startingXCoordinate, final int startingYCoordinate){
         circularRevealActivity(duration, startingXCoordinate, startingYCoordinate);
     }
 
-    public void AnimateClosing(final int duration, final int endingXCoordinate, final int endingYCoordinate) {
+    public void animateClosing ( final int duration, final int endingXCoordinate, final int endingYCoordinate) {
 
         final Activity activity = this.activity;
 

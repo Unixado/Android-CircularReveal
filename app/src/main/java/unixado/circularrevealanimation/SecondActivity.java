@@ -38,7 +38,7 @@ public class SecondActivity extends AppCompatActivity {
                         int x = rootLayout.getWidth () / 2;
                         int y = rootLayout.getHeight () - circularRevealAnimation.getDips ( (float) 130 );
 
-                        circularRevealAnimation.AnimateOpening ( 2000, x, y  );
+                        circularRevealAnimation.animateOpening ( 2000, x, y  );
                         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
                             rootLayout.getViewTreeObserver ().addOnGlobalLayoutListener ( this );
                         } else {
@@ -67,6 +67,6 @@ public class SecondActivity extends AppCompatActivity {
         int x = rootLayout.getWidth () / 2;
         int y = rootLayout.getHeight () - circularRevealAnimation.getDips ( (float) 130 );
 
-        circularRevealAnimation.AnimateClosing (1000, x, y);
+        circularRevealAnimation.animateClosing (1000, x, y);
     }
 }
