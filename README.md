@@ -27,10 +27,10 @@ Circular Reveal Animation to go back and forth between android Activities.
 
 
 2. Add the following dependency in your **app’s** `build.gradle` file: <br/>
-`implementation 'com.github.Unixado:AndroidCircularReveal-Library:-SNAPSHOT'`
+`implementation 'com.github.Unixado:AndroidCircularReveal-Library:Tag'`
 ```
 dependencies {
-    implementation 'com.github.Unixado:AndroidCircularReveal-Library:-SNAPSHOT'
+    implementation 'com.github.Unixado:AndroidCircularReveal-Library:Tag'
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
 }
